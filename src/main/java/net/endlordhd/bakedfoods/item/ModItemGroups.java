@@ -17,6 +17,7 @@ public class ModItemGroups {
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.BAKED_APPLE);
                         entries.add(ModItems.BAKED_CARROT);
+                        entries.add(ModItems.BAKED_MELON);
                     }).build());
 
 

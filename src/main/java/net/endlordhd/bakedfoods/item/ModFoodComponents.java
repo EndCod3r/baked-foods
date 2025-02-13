@@ -11,4 +11,9 @@ public class ModFoodComponents {
             .nutrition(6)
             .saturationModifier(0.9f)
             .build();
+    public static final FoodComponent BAKED_MELON = new FoodComponent.Builder()
+            .nutrition(4)
+            .saturationModifier(0.5f)
+            .snack()
+            .build();
 }
