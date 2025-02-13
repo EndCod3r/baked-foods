@@ -9,8 +9,8 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
-    public static final Item BAKED_APPLE = registerItem("baked_apple", new Item(new Item.Settings()));
-    public static final Item BAKED_CARROT = registerItem("baked_carrot", new Item(new Item.Settings()));
+    public static final Item BAKED_APPLE = registerItem("baked_apple", new Item(new Item.Settings().food(ModFoodComponents.BAKED_APPLE)));
+    public static final Item BAKED_CARROT = registerItem("baked_carrot", new Item(new Item.Settings().food(ModFoodComponents.BAKED_CARROT)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(MoreBakedFoods.MOD_ID, name), item);
