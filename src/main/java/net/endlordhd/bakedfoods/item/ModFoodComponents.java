@@ -1,8 +1,6 @@
 package net.endlordhd.bakedfoods.item;
 
 import net.minecraft.component.type.FoodComponent;
-import net.minecraft.entity.effect.StatusEffect;
-import net.minecraft.entity.effect.StatusEffectInstance;
 
 public class ModFoodComponents {
     public static final FoodComponent BAKED_APPLE = new FoodComponent.Builder()
