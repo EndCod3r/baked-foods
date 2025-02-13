@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "baked-foods",
+	"version": "${version}",
+	"name": "More Baked Foods",
+	"description": "Adds simple baked foods to the game without needing the mod on the client!",
+	"authors": [
+		"EndLordHD"
+	],
+	"contact": {
+		"homepage": "https://github.com/EndCod3r",
+		"sources": "https://github.com/EndCod3r/baked-foods"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/baked-foods/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.endlordhd.bakedfoods.MoreBakedFoods"
+		],
+		"fabric-datagen": [
+			"net.endlordhd.bakedfoods.MoreBakedFoodsDataGenerator"
+		],
+		"client": [
+			"net.endlordhd.bakedfoods.MoreBakedFoodsClient"
+		]
+	},
+	"mixins": [
+		"baked-foods.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
