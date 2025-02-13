@@ -1,5 +1,7 @@
 package net.endlordhd.bakedfoods;
 
+import net.endlordhd.bakedfoods.item.ModItemGroups;
+import net.endlordhd.bakedfoods.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +13,8 @@ public class MoreBakedFoods implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
 
+		ModItems.registerModItems();
 	}
 }
