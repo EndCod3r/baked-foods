@@ -32,7 +32,10 @@
 		"fabricloader": ">=0.16.10",
 		"minecraft": "~1.21.1",
 		"java": ">=21",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"polymer-core": ",>=0.9.17+1.21.1",
+		"polymer-resource-pack": ",>=0.9.17+1.21.1",
+		"polymer-virtual-entity": ",>=0.9.17+1.21.1"
 	},
 	"suggests": {
 		"another-mod": "*"

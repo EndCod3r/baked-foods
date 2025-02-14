@@ -31,6 +31,7 @@ bin/
 # fabric
 
 run/
+fabric-server-launcher.properties
 
 # java
 

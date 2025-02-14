@@ -11,6 +11,9 @@ base {
 }
 
 repositories {
+	repositories {
+		maven { url 'https://maven.nucleoid.xyz' } // You should have it
+	}
 	// Add repositories to retrieve artifacts from in here.
 	// You should only use this when depending on other mods because
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
@@ -32,7 +35,10 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	
+
+	// Polymer for server-side only
+	modImplementation include("eu.pb4:polymer-core:0.9.18+1.21.1")
+	modImplementation include("eu.pb4:polymer-resource-pack:0.9.18+1.21.1")
 }
 
 processResources {
@@ -47,7 +53,11 @@ tasks.withType(JavaCompile).configureEach {
 	it.options.release = 21
 }
 
+
 java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(21)
+	}
 	// Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
 	// if it is present.
 	// If you remove this line, sources will not be generated.
